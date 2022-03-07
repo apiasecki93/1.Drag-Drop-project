@@ -10,9 +10,9 @@ module.exports = {
     output: {
     //we have to set the path where we want to output our bundle file
         // a contenthash to the name of the file so it will look like that: 'bundle.[contenthash].js', so that it will be unique for each build (DYNAMIC BUILD)
-        path: path.resolve(__dirname, 'dist'),//scpecyfie the path where you want to output your bundle file, resolve stand for absolute path
+        path: path.resolve(__dirname, 'public'),//scpecyfie the path where you want to output your bundle file, resolve stand for absolute path
         filename: 'bundle.js', // you can name how you want to name your bundle file, and also can add
-        publicPath: '/dist/'
+        publicPath: '/public/'
     },
     devtool: 'inline-source-map', // this is a tool that will help us debug our application, and it will give us the source code of the file, source-map is a tool that will help us debug our application and should be un-commented in the tsconfig.json file
     //to tell webpack what to do with typescirpt files, we have to add a loader
